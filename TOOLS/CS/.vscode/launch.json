@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/BattleDev/bin/Debug/netcoreapp2.2/BattleDev.dll",
+            "program": "${workspaceFolder}/BattleDev/bin/Debug/net6.0/BattleDev.dll",
             "args": [],
             "cwd": "${workspaceFolder}/BattleDev",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console

@@ -1,9 +1,10 @@
-﻿namespace BattleDev
-{
-    using System;
-    using System.Linq;
-    using System.Collections.Generic;
+﻿using System;
+using System.Linq;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
+namespace BattleDev
+{
     public class Program
     {
         public static void Main(string[] args)
@@ -17,7 +18,16 @@
             Console.WriteLine();
         }
 
-        private static int[] GetIntsLine() => Console.ReadLine().Split(" ").Select(v => Int32.Parse(v)).ToArray();
+        private static int[] GetIntsLine() {         
+            var datasplit = Console.ReadLine().Split(" ");
+            int[] b = new int[datasplit.Length];
+            int i = 0;
+            foreach(string v in datasplit){
+                b[i] =  Int32.Parse(v);
+                i++;
+            }
+            return b;
+        }
         
         private static int GetIntLine() => Int32.Parse(Console.ReadLine());
 
